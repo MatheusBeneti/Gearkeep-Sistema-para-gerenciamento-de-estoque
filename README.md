@@ -1,1 +1,1 @@
-# Trabalho-Final-T-picos-Especiais-em-Banco-de-Dados
+# Trabalho-Final-Topicos-Especiais-em-Banco-de-Dados
