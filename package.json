@@ -1,0 +1,14 @@
+{
+  "name": "trabalho-final-topicos-especiais-em-banco-de-dados",
+  "version": "1.0.0",
+  "description": "Trabalho final de topicos especiais em banco de dados",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matheus Beneti",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
