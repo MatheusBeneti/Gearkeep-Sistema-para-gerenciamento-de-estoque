@@ -4,11 +4,12 @@
   "description": "Trabalho final de topicos especiais em banco de dados",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "run": "node ./index.js "
   },
   "author": "Matheus Beneti",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "mongoose": "^8.2.2"
   }
 }
