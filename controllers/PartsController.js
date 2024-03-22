@@ -1,11 +1,12 @@
-module.exports = {
-    async getAllParts(req, res) {
+const Parts = require('../models/Parts');
+
+module.exports = class PartsController {
+    static async getAllParts(req, res) {
       try {
-        // Algum código assíncrono aqui, se necessário
-        const message = "Esta é uma mensagem de teste."; 
-  
-        // Envie a mensagem ao cliente (supondo que 'minhaPagina' seja a view e 'message' a variável)
-        res.send('minhaPagina');
+        
+        parts = new Parts();
+
+        res.send(parts.getParts());
       } catch (error) {
         // Em caso de erro, envie uma resposta de erro ao cliente
         console.error(error);

@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const partsController = require('../controllers/PartsController')
+const PartsController = require('../controllers/PartsController')
 
-router.get('/', partsController.getAllParts);
+router.get('/', PartsController.getAllParts);
 
 module.exports = router
