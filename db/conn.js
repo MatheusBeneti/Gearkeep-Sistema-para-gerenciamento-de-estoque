@@ -1,6 +1,5 @@
 const password = 'admin';
 
-const { default: PasswordPrompt } = require('inquirer/lib/prompts/password');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = `mongodb+srv://admin:${password}@cluster0.rokvirh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
@@ -13,6 +12,7 @@ const client = new MongoClient(uri, {
       deprecationErrors: true,
     }
 });
+
 async function run() {
     try {
       // Connect the client to the server	(optional starting in v4.7)
@@ -20,24 +20,12 @@ async function run() {
       // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
       console.log("Pinged your deployment. You successfully connected to MongoDB!");
-      print('connecting to MongoDB')
     } finally {
       // Ensures that the client will close when you finish/error
         await client.close();
     }
 }
-run().catch(console.dir);
+run();
 
-
+module.exports = client;
 //----------------------------------------------------------------
-const mongoose = require('mongoose')
-const url = 'localhost'
-
-
-async function main(){
-    await mongoose.connect('url')
-}
-
-main().catch((err) => console.log(err))
-
-module.exports = mongoose
